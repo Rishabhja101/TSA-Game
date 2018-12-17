@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameLibrary;
 
 public class Menu : MonoBehaviour
 {
@@ -13,10 +14,15 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject settings;
 
+
+    private GameController gameController;
+
     // Start is called before the first frame update
     void Start()
     {
-           
+        gameController = GameController.GetGameController();
+        HideInstructions();
+        HideSettings();
     }
 
     // switches to the next scene to begin the game
@@ -47,6 +53,12 @@ public class Menu : MonoBehaviour
     public void HideSettings()
     {
         settings.SetActive(false);
+    }
+
+    // hides the GameObject displaying the pause menu
+    public void HidePauseMenu()
+    {
+        pauseMenu.SetActive(false);
     }
 
     // terminates the application
