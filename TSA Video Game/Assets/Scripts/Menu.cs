@@ -14,7 +14,6 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject settings;
 
-
     private GameController gameController;
 
     // Start is called before the first frame update
