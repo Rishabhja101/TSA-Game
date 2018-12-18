@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Library\GameLibrary\GameLibrary\GameController.cs" />
     <Compile Include="Assets\Library\GameLibrary\GameLibrary\obj\Debug\netstandard2.0\GameLibrary.AssemblyInfo.cs" />
+    <Compile Include="Assets\Scripts\IntroSceneController.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/risha/OneDrive/Documents/GitHub/TSA-Game/TSA Video Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

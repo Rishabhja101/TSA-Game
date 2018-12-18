@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using GameLibrary;
 
 public class Menu : MonoBehaviour
@@ -27,7 +28,7 @@ public class Menu : MonoBehaviour
     // switches to the next scene to begin the game
     public void StartGame()
     {
-        // load scene to start game
+        SceneManager.LoadScene("IntroScene");
     }
 
     // shows the GameObject displaying the instructions
