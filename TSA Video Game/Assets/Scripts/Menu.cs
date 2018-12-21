@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using GameLibrary;
 
 public class Menu : MonoBehaviour
@@ -12,12 +13,16 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject settings;
 
+    [SerializeField]
+    private Slider backgroundMusicSlider;
+
     private GameController gameController;
 
     // Start is called before the first frame update
     private void Start()
     {
         gameController = GameController.GetGameController();
+        SetVolume();
         if (gameController.GetGameState() == GameState.GamePlay)
         {
             HidePauseMenu();
@@ -101,5 +106,15 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("TitleScreen");
     }
 
+    // Sets the volume for background music to the previously selected volume
+    private void SetVolume()
+    {
+        backgroundMusicSlider.value = (float)gameController.GetBackgroundMusicVolume();
+    }
 
+    // Saves the volume for background music to settings
+    public void SaveVolume()
+    {
+        gameController.setBackgroundMusicVolume(backgroundMusicSlider.value);
+    }
 }

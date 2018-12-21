@@ -10,6 +10,7 @@ namespace GameLibrary
     {
         private static GameController gameController;
         private GameState gameState;
+        private Settings settings;
 
         // returns the static instance of the GameController object
         public static GameController GetGameController()
@@ -25,6 +26,7 @@ namespace GameLibrary
         private GameController()
         {
             this.gameState = GameState.MainMenu;
+            this.settings = new Settings();
         }
 
         // returns the current gamestate
@@ -52,5 +54,16 @@ namespace GameLibrary
             this.gameState = GameState.GamePlay;
         }
 
+        // Sets the volume setting for background music to the given value
+        public void setBackgroundMusicVolume(double volume)
+        {
+            this.settings.setBackgroundMusicVolume(volume);
+        }
+
+        // Returns the volume setting for background music
+        public double GetBackgroundMusicVolume()
+        {
+            return this.settings.GetBackgroundMusicVolume();
+        }
     }
 }
