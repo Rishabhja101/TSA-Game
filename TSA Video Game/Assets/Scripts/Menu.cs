@@ -10,9 +10,6 @@ public class Menu : MonoBehaviour
     private GameObject pauseMenu;
 
     [SerializeField]
-    private GameObject instructions;
-
-    [SerializeField]
     private GameObject settings;
 
     private GameController gameController;
@@ -21,15 +18,19 @@ public class Menu : MonoBehaviour
     private void Start()
     {
         gameController = GameController.GetGameController();
-        HidePauseMenu();
-        HideInstructions();
-        HideSettings();
+        if (gameController.GetGameState() == GameState.GamePlay)
+        {
+            HidePauseMenu();
+        }
+        else if (gameController.GetGameState() == GameState.MainMenu)
+        {
+            HideSettings();
+        }
     }
 
     // Update is called once per frame
     private void Update()
     {
-        print(gameController.GetGameState());
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             gameController.TogglePauseState();
@@ -48,18 +49,6 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("IntroScene");
-    }
-
-    // Shows the GameObject displaying the instructions
-    public void ShowInstructions()
-    {
-        instructions.SetActive(true);
-    }
-
-    // Hides the GameObject displaying the instructions
-    public void HideInstructions()
-    {
-        instructions.SetActive(false);
     }
 
     // Shows the GameObject displaying the settings
