@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 732
-  m_MinSize: {x: 681, y: 348}
-  m_MaxSize: {x: 12006, y: 8048}
+  m_MinSize: {x: 679, y: 474}
+  m_MaxSize: {x: 14000, y: 14024}
   vertical: 0
-  controlID: 12296
+  controlID: 13812
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,10 +126,10 @@ MonoBehaviour:
     y: 0
     width: 1093
     height: 732
-  m_MinSize: {x: 404, y: 348}
-  m_MaxSize: {x: 8004, y: 8048}
+  m_MinSize: {x: 404, y: 474}
+  m_MaxSize: {x: 10000, y: 14024}
   vertical: 1
-  controlID: 12297
+  controlID: 13813
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 12256
+  controlID: 13814
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ccbbffff4abcffff4ac4ffff86c4ffffc8c4ffffc8c5fffffec5ffff06c7ffffb8c7ffffc4d0ffffe2d0ffff00d1ffff1ad1ffff38d1ffff5ad1ffff78d1ffffe6d2ffff2ad3ffffe8d3fffffed3ffff14d4ffff54d5ffff32d7fffff8d9ffff48daffff4edbffffc8dcffff72deffff34dfffff32e4ffff0ae5ffffe6e6ffff5ce8ffff3ee9ffff16ebffffeaebffff3aedffff48edffffe8edfffffeedffff7cefffffa8f2ffffc2f2ffff72f3ffff14f4ffff16f6ffff50f6ffff14fbffffd4fbffff6c3200003e350000ac350000843a0000f03a0000a850000026560000a45d00003c6500008c6a000042750000
+      m_ExpandedIDs: f0b4ffff9cb5ffff62b8ffff78b8ffffeab9ffffccbbffff4abcffff4ac4ffff86c4ffffc8c4ffffc8c5fffffec5ffff06c7ffffb8c7ffffc4d0ffffe2d0ffff00d1ffff1ad1ffff38d1ffff5ad1ffff78d1ffffe6d2ffff2ad3ffffe8d3fffffed3ffff14d4ffff54d5ffff32d7fffff8d9ffff48daffff4edbffffc8dcffff72deffff34dfffff32e4ffff0ae5ffffe6e6ffff5ce8ffff3ee9ffff16ebffffeaebffff3aedffff48edffffe8edfffffeedffff7cefffffa8f2ffffc2f2ffff72f3ffff14f4ffff16f6ffff50f6ffff14fbffffd4fbffff6c3200003e350000ac350000843a0000f03a0000a850000026560000a45d00003c6500008c6a000042750000827b000080810000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -389,14 +389,14 @@ MonoBehaviour:
     y: 390
     width: 1093
     height: 342
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -576,8 +576,8 @@ MonoBehaviour:
     y: 0
     width: 443
     height: 732
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}

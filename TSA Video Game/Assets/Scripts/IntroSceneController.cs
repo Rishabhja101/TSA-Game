@@ -9,12 +9,16 @@ public class IntroSceneController : MonoBehaviour
     [SerializeField]
     private float timeDelay;
 
+    [SerializeField]
+    AudioSource audioSource;
+
     private GameController gameController;
 
     // Start is called before the first frame update
     private void Start()
     {
         gameController = GameController.GetGameController();
+        audioSource.volume = (float)gameController.GetBackgroundMusicVolume();
         Invoke("NextScene", timeDelay);
     }
 

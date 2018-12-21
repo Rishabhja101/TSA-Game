@@ -664,6 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 5
+  audioSource: {fileID: 1480499898}
 --- !u!4 &1674311934
 Transform:
   m_ObjectHideFlags: 0
