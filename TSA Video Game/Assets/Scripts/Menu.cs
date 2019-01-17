@@ -49,7 +49,7 @@ public class Menu : MonoBehaviour
             }
         }
     }
-
+        
     // Switches to the next scene to begin the game
     public void StartGame()
     {

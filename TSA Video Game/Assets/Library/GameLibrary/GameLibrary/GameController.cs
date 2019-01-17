@@ -65,5 +65,11 @@ namespace GameLibrary
         {
             return this.settings.GetBackgroundMusicVolume();
         }
+
+        // returns the leaderboard scores
+        public string[] GetLeaderboard()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
