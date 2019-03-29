@@ -1,0 +1,1 @@
+The EXE for the game is inside the folder names “Hack2” at the same location as this readme file. The name of the EXE for the game is “Attack The Hack.” Play the game in 1024 x 768 for optimal results.
